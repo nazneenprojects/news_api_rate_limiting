@@ -15,19 +15,18 @@ This project focuses on implementation of News API Rate limiting usigng FastAPI,
 | Component                  | Tool                                        |
 | -------------------------- | ------------------------------------------- |
 | API server                 | FastAPI                                     |
-| Async support              | `httpx`, `
-`, `asyncio`               |
+| Async support              | `httpx`, ``, `asyncio`                      |
 | Database                   | PostgreSQL (accessed via `asyncpg`)         |
 | ORM (optional but helpful) | `SQLModel` or `SQLAlchemy` (async mode)     |
 | Rate Limiting              | `slowapi` (Flask-style limiter for FastAPI) |
 | Environment variables      | `python-dotenv`                             |
 
 ### Run
-uvicorn app.main:app --reload
+´uvicorn app.main:app ``--reload´
 
 
 ### Testing
-curl http://localhost:8000/news
+´curl http://localhost:8000/news´
 
 
 ### Future Improvements
