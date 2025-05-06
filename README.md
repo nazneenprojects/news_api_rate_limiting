@@ -39,12 +39,15 @@ Add endpoint to trigger news fetch manually (POST /fetch-news)
 
 Add pagination or search filters
 
+Bug Fix : duplication issue
+
 
 ### Output snaps
 
 ![img_1.png](img_1.png)
 
 ![img_2.png](img_2.png)
+
 
 ![img.png](img.png)
 
