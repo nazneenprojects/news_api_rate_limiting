@@ -9,3 +9,4 @@ class News(SQLModel, table=True):
     description: Optional[str]
     url: str
     published_at: datetime
+    source: Optional[str] = Field(default=None)

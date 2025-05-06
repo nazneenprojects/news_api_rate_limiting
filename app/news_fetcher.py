@@ -20,11 +20,13 @@ async def fetch_and_store_news():
 
     async with AsyncSessionLocal() as session:
         for article in articles:
+            source_name = article.get("source", {}).get("name", "Unknown")
             news_item = News(
                 title=article["title"],
                 description=article.get("description"),
                 url=article["url"],
-                published_at=datetime.fromisoformat(article["publishedAt"].rstrip("Z"))
+                published_at=datetime.fromisoformat(article["publishedAt"].rstrip("Z")),
+                source=source_name
             )
             session.add(news_item)
         await session.commit()
